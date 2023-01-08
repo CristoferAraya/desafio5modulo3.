@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <hr/>
+        <div>
+            <label>Nueva Tarea</label><br>
+            <input type="text" class="form-control" id="newTask">
+        </div>
+        <div>
+            <div class="pull-right">
+                <span id="taskReady"></span><span id="totalTasks"></span>
+            </div>
+           
+            <h1>Tareas</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Tarea</th>
+                        <th class="text-right">Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tasks"></tbody>
+        </div>
+    </div>
+
+    <script src="assets/data.js"></script>
+</body>
+
+</html>
